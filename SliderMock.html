@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Item Slider Faded Sides</title>
+
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+  <script src="js/sliderMock.js" charset="utf-8">
+  </script>
+  <style media="screen">
+    body {
+      background-color: #888;
+      font-family: 'Didact Gothic';
+    }
+
+    .your-class {
+      position: absolute;
+      top: 150px;
+      left: 15%;
+      width: 70%;
+      height: 420px;
+      overflow-x: visible !important;
+
+    }
+
+    .imgCont {
+      position: relative;
+      width: 100%;
+      /* overflow: hidden; */
+      height: 420px;
+
+    }
+
+    .slick-list {
+      overflow: visible !important;
+
+    }
+
+    .quadImages1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25%;
+      height: 50%;
+
+    }
+    .quadImages1:hover {
+      opacity: 0.7;
+    }
+    .quadImages2 {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 75%;
+      height: 50%;
+
+    }
+    .quadImages2:hover {
+      opacity: 0.7;
+    }
+    .quadImages3 {
+      position: absolute;
+      top: 0;
+      left: 25%;
+      width: 75%;
+      height: 50%;
+
+    }
+    .quadImages3:hover {
+      opacity: 0.7;
+    }
+    .quadImages4 {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      width: 25%;
+      height: 50%;
+
+    }
+    .quadImages4:hover {
+      opacity: 0.7;
+    }
+    .imagesStyle {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-sizing: border-box;
+      border: 1px solid white;
+      z-index: -1;
+    }
+
+    .imagesStyle:hover {
+      opacity: 0.7;
+    }
+
+    .left_Mask {
+      position: absolute;
+      top: 150px;
+      left: 0;
+      width: 15%;
+      height: 420px;
+      background-color: rgba(250, 250, 250, 0.7);
+      z-index: 5;
+    }
+
+    .right_Mask {
+      position: absolute;
+      top: 150px;
+      right: 0;
+      width: 15%;
+      height: 420px;
+      background-color: rgba(250, 250, 250, 0.7);
+      z-index: 5;
+    }
+
+    .button_Left {
+      left: -55px;
+      z-index: 6;
+
+    }
+
+    .button_Right {
+      right: -55px;
+      z-index: 6;
+    }
+    .spanText{
+      position: absolute;
+      top:40px;
+      left:50px;
+       z-index: 5 !important;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: 600;
+      color: white;
+      text-shadow: 0 0 2px black;
+      border-bottom:2px solid white;
+
+    }
+    .gradientOverlay{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="left_Mask"></div>
+  <div class="your-class">
+
+    <div class="imgCont">
+
+      <a href="#">
+
+        <div class="quadImages1"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing.jpeg" alt="quadImg1"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages2"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing2.jpeg" alt="quadImg2"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages3"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architect-architecture-body-33343.jpg" alt="quadImg3"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages4"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectsAbove.jpeg" alt="quadImg4"></div>
+      </a>
+    </div>
+    <div class="imgCont">
+      <a href="#">
+        <div class="quadImages1"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\people-eiffel-tower-lights-night.jpg" alt="quadImg1"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages2"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-301987.jpeg" alt="quadImg2"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages3"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-382297.jpeg" alt="quadImg3"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages4"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-976866.jpeg" alt="quadImg4"></div>
+      </a>
+    </div>
+    <div class="imgCont">
+      <a href="#">
+        <div class="quadImages1"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\seats-orange-congress-empty-722708.jpeg" alt="quadImg1"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages2"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\adults-agreement-beverage-567633.jpg" alt="quadImg2"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages3"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\background-blur-bright-684314.jpg" alt="quadImg3"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages4"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\business-camera-communication-436784.jpg" alt="quadImg4"></div>
+      </a>
+    </div>
+
+  </div>
+  <div class="right_Mask"></div>
+
+
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
+</body>
+
+</html>
