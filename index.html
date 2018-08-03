@@ -14,10 +14,17 @@
       background-color: #888;
       font-family: 'Didact Gothic';
     }
-
-    .your-class {
+    .sliderContainer{
       position: absolute;
       top: 150px;
+      left: 0%;
+      width:100%;
+      height: 420px;
+      overflow: hidden;
+    }
+    .your-class {
+      position: absolute;
+      top: 0px;
       left: 15%;
       width: 70%;
       height: 420px;
@@ -44,10 +51,13 @@
       left: 0;
       width: 25%;
       height: 50%;
-
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 1px solid white;
     }
-    .quadImages1:hover {
-      opacity: 0.7;
+    .quadImages1:hover .imagesStyle{
+
+      left:0;
     }
     .quadImages2 {
       position: absolute;
@@ -55,10 +65,13 @@
       left: 0;
       width: 75%;
       height: 50%;
-
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 1px solid white;
     }
-    .quadImages2:hover {
-      opacity: 0.7;
+    .quadImages2:hover .imagesStyle{
+
+      left:0;
     }
     .quadImages3 {
       position: absolute;
@@ -66,10 +79,13 @@
       left: 25%;
       width: 75%;
       height: 50%;
-
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 1px solid white;
     }
-    .quadImages3:hover {
-      opacity: 0.7;
+    .quadImages3:hover .imagesStyle{
+
+      left:0;
     }
     .quadImages4 {
       position: absolute;
@@ -77,30 +93,34 @@
       left: 75%;
       width: 25%;
       height: 50%;
-
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 1px solid white;
     }
-    .quadImages4:hover {
-      opacity: 0.7;
+    .quadImages4:hover .imagesStyle{
+
+      left:0;
     }
     .imagesStyle {
       position: absolute;
       top:0;
-      left:0;
-      width: 100%;
+      left:-100px;
+      width: calc(100% + 100px);
       height: 100%;
       object-fit: cover;
-      box-sizing: border-box;
-      border: 1px solid white;
+
       z-index: -1;
+      transition: 0.5s;
     }
 
-    .imagesStyle:hover {
-      opacity: 0.7;
+    .gradientOverlay:hover .imagesStyle{
+
+      left:0;
     }
 
     .left_Mask {
       position: absolute;
-      top: 150px;
+      top: 0px;
       left: 0;
       width: 15%;
       height: 420px;
@@ -110,7 +130,7 @@
 
     .right_Mask {
       position: absolute;
-      top: 150px;
+      top: 0px;
       right: 0;
       width: 15%;
       height: 420px;
@@ -144,18 +164,20 @@
     .gradientOverlay{
       position: absolute;
       top:0;
-      left:0;
-      width:100%;
+      left:-100px;
+      width:120%;
       height:100%;
       background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+
     }
+
   </style>
 </head>
 
 <body>
 
 
-
+<div class="sliderContainer">
   <div class="left_Mask"></div>
   <div class="your-class">
 
@@ -206,7 +228,7 @@
 
   </div>
   <div class="right_Mask"></div>
-
+</div>
 
   <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="js/slick.js"></script>
