@@ -58,6 +58,7 @@
       box-sizing: border-box;
       border-right: 1px solid white;
       border-bottom: 1px solid white;
+
     }
     .itemWrap:hover .imagesStyle{
 
@@ -166,8 +167,8 @@
     }
     .spanText{
       position: absolute;
-      top:30px;
-      left:40px;
+      top:10px;
+      left:20px;
        z-index: 1 !important;
       text-decoration: none;
       font-size: 35px;
@@ -179,8 +180,8 @@
     }
     .spanText2{
       position: absolute;
-      top:120px;
-      left:50px;
+      bottom:0px;
+      left:90px;
        z-index: 1 !important;
       text-decoration: none;
       font-size: 20px;
@@ -199,26 +200,26 @@
       z-index: 5;
     }
     .itemWrap:hover .spanText2{
-      transform: translateY(-20px);
+      transform: translateY(-30px);
       opacity:1;
     }
     .quadImages2:hover .spanText2{
-      transform: translateY(-20px);
+      transform: translateY(-30px);
       opacity:1;
     }
     .quadImages3:hover .spanText2{
-      transform: translateY(-20px);
+      transform: translateY(-30px);
       opacity:1;
     }
     .quadImages4:hover .spanText2{
-      transform: translateY(-20px);
+      transform: translateY(-30px);
       opacity:1;
     }
     .gradientOverlay{
       position: absolute;
       top:0;
       left:0;
-      width:100%;
+      width:120%;
       height:100%;
       opacity:0.7;
       background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
@@ -228,6 +229,24 @@
       opacity:1;
 
     }
+    .heartIcon{
+      width:40px;
+      height:40px;
+      position: absolute;
+      bottom:20px;
+      left:20px;
+      z-index: 6;
+      transition: 1s;
+      transform: rotateY(0deg);
+      opacity:0;
+    }
+    .itemWrap:hover .heartIcon{
+      transform:  rotateY(180deg);
+      transition: 1s;
+      opacity:1;
+
+    }
+
   </style>
 </head>
 
@@ -242,44 +261,44 @@
 
       <a class="itemWrap" href="#">
 
-        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing.jpeg" alt="quadImg1"></div>
+        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing.jpeg" alt="quadImg1"></div>
       </a>
       <a class="itemWrap" href="#">
-        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing2.jpeg" alt="quadImg2"></div>
+        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing2.jpeg" alt="quadImg2"></div>
       </a>
       <a class="itemWrap" href="#">
-        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architect-architecture-body-33343.jpg" alt="quadImg3"></div>
+        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architect-architecture-body-33343.jpg" alt="quadImg3"></div>
       </a>
       <a class="itemWrap" href="#">
-        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectsAbove.jpeg" alt="quadImg4"></div>
-      </a>
-    </div>
-    <div class="imgCont">
-      <a class="itemWrap" href="#">
-        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\people-eiffel-tower-lights-night.jpg" alt="quadImg1"></div>
-      </a>
-      <a class="itemWrap" href="#">
-        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-301987.jpeg" alt="quadImg2"></div>
-      </a>
-      <a class="itemWrap" href="#">
-        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-382297.jpeg" alt="quadImg3"></div>
-      </a>
-      <a class="itemWrap" href="#">
-        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-976866.jpeg" alt="quadImg4"></div>
+        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectsAbove.jpeg" alt="quadImg4"></div>
       </a>
     </div>
     <div class="imgCont">
       <a class="itemWrap" href="#">
-        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\seats-orange-congress-empty-722708.jpeg" alt="quadImg1"></div>
+        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\people-eiffel-tower-lights-night.jpg" alt="quadImg1"></div>
       </a>
       <a class="itemWrap" href="#">
-        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\adults-agreement-beverage-567633.jpg" alt="quadImg2"></div>
+        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-301987.jpeg" alt="quadImg2"></div>
       </a>
       <a class="itemWrap" href="#">
-        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\background-blur-bright-684314.jpg" alt="quadImg3"></div>
+        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-382297.jpeg" alt="quadImg3"></div>
       </a>
       <a class="itemWrap" href="#">
-        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\business-camera-communication-436784.jpg" alt="quadImg4"></div>
+        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-976866.jpeg" alt="quadImg4"></div>
+      </a>
+    </div>
+    <div class="imgCont">
+      <a class="itemWrap" href="#">
+        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\seats-orange-congress-empty-722708.jpeg" alt="quadImg1"></div>
+      </a>
+      <a class="itemWrap" href="#">
+        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\adults-agreement-beverage-567633.jpg" alt="quadImg2"></div>
+      </a>
+      <a class="itemWrap" href="#">
+        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\background-blur-bright-684314.jpg" alt="quadImg3"></div>
+      </a>
+      <a class="itemWrap" href="#">
+        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><img class="heartIcon" src="images/heart.png"><div class="gradientOverlay"></div><img class="imagesStyle" src="images\business-camera-communication-436784.jpg" alt="quadImg4"></div>
       </a>
     </div>
 
