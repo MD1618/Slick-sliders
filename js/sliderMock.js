@@ -15,6 +15,7 @@ window.onload = function() {
       slidesToScroll: 3,
       centerMode: true,
       centerPadding: '0px',
+      useTransform: true,
       prevArrow:"<button type='button' class='slick-prev button_Left'><img class='arrowImage' src='images/leftArrow.png'></button>",
       nextArrow:"<button type='button' class='slick-next button_Right'><img class='arrowImage' src='images/rightArrow.png'></button>"
 
