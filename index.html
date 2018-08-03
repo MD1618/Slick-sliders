@@ -126,8 +126,10 @@
       left: 0;
       width: 15%;
       height: 420px;
-      background-color: rgba(250, 250, 250, 0.7);
+      background-color: rgba(200, 200, 200, 0.7);
       z-index: 5;
+      box-sizing: border-box;
+      border:2px solid #eee;
     }
 
     .right_Mask {
@@ -136,18 +138,20 @@
       right: 0;
       width: 15%;
       height: 420px;
-      background-color: rgba(250, 250, 250, 0.7);
+      background-color: rgba(200, 200, 200, 0.7);
       z-index: 5;
+      box-sizing: border-box;
+      border:2px solid #eee;
     }
 
     .button_Left {
-      left: -55px;
+      left: -60px;
       z-index: 6;
 
     }
 
     .button_Right {
-      right: -55px;
+      right: -60px;
       z-index: 6;
     }
     .spanText{
@@ -162,6 +166,36 @@
       text-shadow: 0 0 2px black;
       border-bottom:2px solid white;
 
+    }
+    .spanText2{
+      position: absolute;
+      top:120px;
+      left:50px;
+       z-index: 5 !important;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 200;
+      color: white;
+      text-shadow: 0 0 2px black;
+      border-bottom:1px solid white;
+      opacity:0;
+      transition: 0.5s;
+    }
+    .quadImages1:hover .spanText2{
+      transform: translateY(-20px);
+      opacity:1;
+    }
+    .quadImages2:hover .spanText2{
+      transform: translateY(-20px);
+      opacity:1;
+    }
+    .quadImages3:hover .spanText2{
+      transform: translateY(-20px);
+      opacity:1;
+    }
+    .quadImages4:hover .spanText2{
+      transform: translateY(-20px);
+      opacity:1;
     }
     .gradientOverlay{
       position: absolute;
@@ -191,44 +225,44 @@
 
       <a href="#">
 
-        <div class="quadImages1"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing.jpeg" alt="quadImg1"></div>
+        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing.jpeg" alt="quadImg1"></div>
       </a>
       <a href="#">
-        <div class="quadImages2"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing2.jpeg" alt="quadImg2"></div>
+        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectDrawing2.jpeg" alt="quadImg2"></div>
       </a>
       <a href="#">
-        <div class="quadImages3"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architect-architecture-body-33343.jpg" alt="quadImg3"></div>
+        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architect-architecture-body-33343.jpg" alt="quadImg3"></div>
       </a>
       <a href="#">
-        <div class="quadImages4"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectsAbove.jpeg" alt="quadImg4"></div>
-      </a>
-    </div>
-    <div class="imgCont">
-      <a href="#">
-        <div class="quadImages1"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\people-eiffel-tower-lights-night.jpg" alt="quadImg1"></div>
-      </a>
-      <a href="#">
-        <div class="quadImages2"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-301987.jpeg" alt="quadImg2"></div>
-      </a>
-      <a href="#">
-        <div class="quadImages3"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-382297.jpeg" alt="quadImg3"></div>
-      </a>
-      <a href="#">
-        <div class="quadImages4"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-976866.jpeg" alt="quadImg4"></div>
+        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\architectsAbove.jpeg" alt="quadImg4"></div>
       </a>
     </div>
     <div class="imgCont">
       <a href="#">
-        <div class="quadImages1"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\seats-orange-congress-empty-722708.jpeg" alt="quadImg1"></div>
+        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\people-eiffel-tower-lights-night.jpg" alt="quadImg1"></div>
       </a>
       <a href="#">
-        <div class="quadImages2"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\adults-agreement-beverage-567633.jpg" alt="quadImg2"></div>
+        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-301987.jpeg" alt="quadImg2"></div>
       </a>
       <a href="#">
-        <div class="quadImages3"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\background-blur-bright-684314.jpg" alt="quadImg3"></div>
+        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-382297.jpeg" alt="quadImg3"></div>
       </a>
       <a href="#">
-        <div class="quadImages4"><span class="spanText">New Item</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\business-camera-communication-436784.jpg" alt="quadImg4"></div>
+        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\pexels-photo-976866.jpeg" alt="quadImg4"></div>
+      </a>
+    </div>
+    <div class="imgCont">
+      <a href="#">
+        <div class="quadImages1"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\seats-orange-congress-empty-722708.jpeg" alt="quadImg1"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages2"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\adults-agreement-beverage-567633.jpg" alt="quadImg2"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages3"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\background-blur-bright-684314.jpg" alt="quadImg3"></div>
+      </a>
+      <a href="#">
+        <div class="quadImages4"><span class="spanText">New Item</span><span class="spanText2">Click For More</span><div class="gradientOverlay"></div><img class="imagesStyle" src="images\business-camera-communication-436784.jpg" alt="quadImg4"></div>
       </a>
     </div>
 
